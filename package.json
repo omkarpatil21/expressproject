@@ -1,0 +1,14 @@
+{
+  "name": "exprojext",
+  "version": "1.0.0",
+  "description": "expressjs based project for resume",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "omkar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
