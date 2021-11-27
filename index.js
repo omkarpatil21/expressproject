@@ -3,6 +3,8 @@ const path=require('path')
 const app = express()
 const port = 3000
 
+//setting tempalting engine
+app.set('view engine','ejs')
 
 //sending direct output as response
 app.get('/', (req, res) => {
@@ -11,7 +13,8 @@ app.get('/', (req, res) => {
 
 //sending html files as resonse
 app.get('/about', (req, res) => {
-    res.sendFile(path.join(__dirname,'about.html'));
+    //res.sendFile(path.join(__dirname,'about.html'));
+    res.render('about')
 })
 
 // sending json data as response
